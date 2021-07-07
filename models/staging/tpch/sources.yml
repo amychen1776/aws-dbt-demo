@@ -11,7 +11,7 @@ sources:
             
       - name: lineitem
         external:
-          location: "s3://tpch-sample-data/tpch_data/lineitem.csv"        # amazon s3 path prefix
+          location: "s3://tpch-sample-data/tpch_data/lineitem"        # amazon s3 path prefix
           row_format: >                       # Hive specification
             serde 'org.openx.data.jsonserde.JsonSerDe'
             with serdeproperties (
@@ -48,7 +48,7 @@ sources:
      
       - name: orders
         external:
-          location: "s3://tpch-sample-data/tpch_data/orders.csv"        # amazon s3 path prefix
+          location: "s3://tpch-sample-data/tpch_data/orders"        # amazon s3 path prefix
           row_format: >                       # Hive specification
             serde 'org.openx.data.jsonserde.JsonSerDe'
             with serdeproperties (
@@ -71,7 +71,5 @@ sources:
           - name: o_clerk
             data_type: varchar(255)
           - name: o_shippriority
-            data_type: varchar(255)
-          - name: o_comment
             data_type: varchar(255)
      
