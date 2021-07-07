@@ -2,7 +2,6 @@ name: 'aws_demo_project'
 version: '1.0.0'
 config-version: 2
 
-# This setting configures which "profile" dbt uses for this project.
 profile: 'default'
 
 # These configurations specify where dbt should look for different types of files.
